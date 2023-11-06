@@ -41,7 +41,7 @@ from tensorflow.keras.layers import Embedding, LSTM, Dense, Bidirectional, Dropo
 from tensorflow.keras.regularizers import l2
 ```
 
-## How to run
+# How to run
 
 ```python
 filename = 'training database.csv'
