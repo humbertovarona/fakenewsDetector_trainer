@@ -52,6 +52,20 @@ model = build_simplemodel(max_words=10000, max_sequence_length=200)
 loss, accuracy = train_and_evaluate_model(model, X_train_seq, y_train, X_test_seq, y_test)
 ```
 
+# How to save models
+
+```python
+model_filename =  'fake_or_real_news_simplemodel'
+save_model(model, model_filename)
+```
+
+or
+
+```python
+model_filename =  'fake_or_real_news_simplemodel.h5'
+save_model(model, model_filename)
+```
+
 # 'training_database.csv' file structure
 
 It is made up of three columns separated by commas.
