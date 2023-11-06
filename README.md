@@ -71,7 +71,7 @@ headline_n, news_n, fake
 ```
 The third column is a binary value, it can be [0,1], [fake,real] or [true,false]
 
-# Function input parameters: train_and_evaluate_model
+# Function parameters: train_and_evaluate_model
 
 Definition:
 ```python
@@ -99,6 +99,25 @@ train_and_evaluate_model(model, X_train, y_train, X_test, y_test, epochs=5, batc
 >> `enable_gpu`: A boolean flag that determines whether GPU (Graphics Processing Unit) training will be enabled if available. If True, training is performed on the GPU; otherwise, it's done on the CPU. It is set to False by default.
 >>
 >> `verbose`: A boolean flag that controls the verbosity during training and evaluation. If True, progress messages are displayed; if False, no messages are shown. It is set to True by default.
+>
+> Returns:
+>
+>> `loss`: This is a scalar value representing the loss (typically binary cross-entropy or another loss function) calculated during the evaluation of the model on the test data. The loss measures how well the model's predictions match the true labels, and a lower loss indicates better performance.
+>>
+>> `accuracy`: This is a scalar value representing the accuracy of the model on the test data. It is a measure of the proportion of correctly classified instances in the test dataset. It is typically expressed as a percentage, where higher values indicate better model performance.
+
+# Function parameters: build_simplemodel, build_robustmodel, and build_ultrarobustmodel
+
+> Input arguments:
+>
+>> `max_words`: An integer that represents the maximum number of words in the vocabulary or the size of the input word embedding. This parameter determines the input dimension of the embedding layer.
+>>
+>> `max_sequence_length`: An integer that represents the maximum sequence length or the maximum number of time steps for input sequences. This parameter specifies the input length of the sequences to be processed by the model.
+>
+> Returns:
+>
+>> `model`: A Keras model that is constructed according to the provided specifications. The model consists of an embedding layer with max_words input dimension, followed by an LSTM layer with 128 units, and a final dense layer with a sigmoid activation function. The model is compiled using the Adam optimizer and binary cross-entropy loss, with accuracy as a metric.
+
 
 # Model architecture
 
