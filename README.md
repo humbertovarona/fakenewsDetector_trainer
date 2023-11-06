@@ -144,15 +144,15 @@ model = build_ultrarobustmodel(max_words=10000, max_sequence_length=200)
 
 # Model architecture
 
-function name: build_simplemodel
+## build_simplemodel architecture
 
 ![build_simplemodel](images/fake_or_real_news_simplemodel.png)
 
-function name: build_robustmodel
+## build_robustmodel architecture
 
 ![build_robustmodel](images/fake_or_real_news_robustmodel.png)
 
-function name: build_ultrarobustmodel
+## build_ultrarobustmodel architecture
 
 ![build_ultrarobustmodel](images/fake_or_real_news_ultrarobustmodel.png)
 
