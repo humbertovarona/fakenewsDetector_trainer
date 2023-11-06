@@ -54,6 +54,10 @@ loss, accuracy = train_and_evaluate_model(model, X_train_seq, y_train, X_test_se
 
 # 'training_database.csv' file structure
 
+It is made up of three columns separated by commas.
+
+Samples:
 ```csv
+Newsheadline, News, FakeOrReal
 ```
 
