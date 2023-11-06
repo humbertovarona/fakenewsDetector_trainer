@@ -59,5 +59,15 @@ It is made up of three columns separated by commas.
 Samples:
 ```csv
 Newsheadline, News, FakeOrReal
+headline_1, news_1, fake
+headline_2, news_2, fake
+headline_3, news_3, real
+headline_4, news_4, real
+headline_5, news_5, fake
+.
+.
+.
+headline_n, news_n, fake 
 ```
+The third column is a binary value, it can be [0,1], [fake,real] or [true,false]
 
