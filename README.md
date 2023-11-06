@@ -85,7 +85,7 @@ headline_n, news_n, fake
 ```
 The third column is a binary value, it can be [0,1], [fake,real] or [true,false]
 
-# Function parameters: train_and_evaluate_model
+# train_and_evaluate_model: Function parameters
 
 Definition:
 ```python
@@ -120,7 +120,7 @@ loss, accuracy = train_and_evaluate_model(model, X_train, y_train, X_test, y_tes
 >>
 >> `accuracy`: This is a scalar value representing the accuracy of the model on the test data. It is a measure of the proportion of correctly classified instances in the test dataset. It is typically expressed as a percentage, where higher values indicate better model performance.
 
-# Function parameters: build_simplemodel, build_robustmodel, and build_ultrarobustmodel
+# build_simplemodel, build_robustmodel, and build_ultrarobustmodel: Function parameters 
 
 Definition:
 ```python
