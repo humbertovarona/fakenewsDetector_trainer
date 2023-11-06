@@ -75,7 +75,7 @@ The third column is a binary value, it can be [0,1], [fake,real] or [true,false]
 
 Definition:
 ```python
-train_and_evaluate_model(model, X_train, y_train, X_test, y_test, epochs=5, batch_size=64, learning_rate=0.001, enable_gpu=False, verbose=True)
+loss, accuracy = train_and_evaluate_model(model, X_train, y_train, X_test, y_test, epochs=5, batch_size=64, learning_rate=0.001, enable_gpu=False, verbose=True)
 ```
 
 > Input arguments:
@@ -107,6 +107,15 @@ train_and_evaluate_model(model, X_train, y_train, X_test, y_test, epochs=5, batc
 >> `accuracy`: This is a scalar value representing the accuracy of the model on the test data. It is a measure of the proportion of correctly classified instances in the test dataset. It is typically expressed as a percentage, where higher values indicate better model performance.
 
 # Function parameters: build_simplemodel, build_robustmodel, and build_ultrarobustmodel
+
+Definition:
+```python
+model = build_simplemodel(max_words=10000, max_sequence_length=200)
+
+model = build_robustmodel(max_words=10000, max_sequence_length=200)
+
+model = build_ultrarobustmodel(max_words=10000, max_sequence_length=200)
+```
 
 > Input arguments:
 >
