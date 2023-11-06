@@ -71,3 +71,8 @@ headline_n, news_n, fake
 ```
 The third column is a binary value, it can be [0,1], [fake,real] or [true,false]
 
+# Model architecture
+
+function name: build_simplemodel
+
+![Tux, the Linux mascot](images/fake_or_real_news_simplemodel.png)
