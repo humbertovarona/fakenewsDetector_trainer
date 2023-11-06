@@ -75,12 +75,14 @@ The third column is a binary value, it can be [0,1], [fake,real] or [true,false]
 
 Definition:
 ```python
-def train_and_evaluate_model(model, X_train, y_train, X_test, y_test, epochs=5, batch_size=64, learning_rate=0.001, enable_gpu=False, verbose=True):
+train_and_evaluate_model(model, X_train, y_train, X_test, y_test, epochs=5, batch_size=64, learning_rate=0.001, enable_gpu=False, verbose=True)
 ```
 
-model: The Keras model to be trained and evaluated. It should be a model previously defined using the Keras library.
+> Input arguments:
 
-X_train: The training data (features) to be used for training the model. It should be a NumPy array or a compatible data structure.
+>> `model`: The Keras model to be trained and evaluated. It should be a model previously defined using the Keras library.
+
+>> `X_train`: The training data (features) to be used for training the model. It should be a NumPy array or a compatible data structure.
 
 y_train: The training labels corresponding to the training data. It should be a NumPy array or a compatible data structure.
 
