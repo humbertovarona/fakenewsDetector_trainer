@@ -75,4 +75,13 @@ The third column is a binary value, it can be [0,1], [fake,real] or [true,false]
 
 function name: build_simplemodel
 
-![Tux, the Linux mascot](images/fake_or_real_news_simplemodel.png)
+![build_simplemodel](images/fake_or_real_news_simplemodel.png)
+
+function name: build_robustmodel
+
+![build_robustmodel](images/fake_or_real_news_robustmodel.png)
+
+function name: build_ultrarobustmodel
+
+![build_ultrarobustmodel](images/fake_or_real_news_ultrarobustmodel.png)
+
